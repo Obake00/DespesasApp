@@ -26,17 +26,19 @@ class MyHomePage extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(title: Text('Minha aplicação')),
-        body: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
-            Container(
-              child: Card(
-                child: Text('Grafico'),
-                elevation: 5
-                )
-                ),
-            TransactionUser(),
-          ],
+        body: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              Container(
+                child: Card(
+                  child: Text('Grafico'),
+                  elevation: 5
+                  )
+                  ),
+              TransactionUser(),
+            ],
+          ),
         ),
       ),
     );
